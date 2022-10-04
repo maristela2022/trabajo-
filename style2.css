@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;                 /*seteo basico*/
+    padding: 0;                           /*seteo basico*/
+    margin: 0; 
+    background-color: rgb(216, 194, 235);                            /*seteo basico*/
+   
+  }
+
+html {
+    font-size: 1rem;
+    height: 100%;
+
+}
+
+.logo {
+    height: 16rem;
+ 
+}
+h1 {
+    font-family:'Tangerine', serif;
+    color:rgb(11, 11, 12);
+    text-align: left;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa; 
+    background-color: rgb(231, 204, 231);
+
+}
+
+h2{
+   font-family:'Tangerine', serif;
+   font-size: 48px;
+   text-shadow: 4px 4px 4px #aaa; 
+}
+
+body, header, main, footer {
+    /*border: 3px solid red;*/
+    min-height: 50px;
+    min-width: 400px;
+    margin: .5rem;
+  
+  
+}
+
+body {
+    background-color: rgb(245, 204, 245);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    min-height: 200px;
+    overflow: auto;                 /*evita que el main=bloque grande se desborde*/
+    background-color: white;
+    
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 0 0.5rem rgba(179, 174, 172, 0.5);
+}
+footer {
+    background: rgb(255,255,255);
+}
+img{
+    width: 15rem;
+    
+}
+
+/*logo y menu*/
+.header-logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;}
+
+#contenedor{
+    border: solid 2px rgb(14, 12, 12);
+    display: flex;
+    flex-wrap:wrap ;
+    height: auto;
+    padding-bottom: 10rem;
+    gap:2rem;}
+
+p{text-align: center;
+text-align: justify;}

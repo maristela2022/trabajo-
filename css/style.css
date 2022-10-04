@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;                 /*seteo basico*/
-  /*padding: 0;*/                           /*seteo basico*/
-    margin: 0;                              /*seteo basico*/
+    padding: 0;                           /*seteo basico*/
+    margin: 0; 
+    background-color: rgb(216, 194, 235);                            /*seteo basico*/
+   
   }
 
 html {
@@ -15,10 +17,11 @@ html {
  
 }
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
+    font-family: 'Tangerine', serif;
     color:rgb(11, 11, 12);
     text-align: left;
-    font-size: 4rem;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
     background-color: rgb(231, 204, 231);
 
 }
@@ -28,10 +31,12 @@ body, header, main, footer {
     min-height: 50px;
     min-width: 400px;
     margin: .5rem;
+  
+  
 }
 
 body {
-    background-color: rgb(231, 204, 231);
+    background-color: rgb(245, 204, 245);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main {
@@ -56,35 +61,18 @@ main>div {
     margin: 0.5rem;
     height: auto;
     /*float: left;*/
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
-}
-/*main>aside {
-    border: 2px solid blue;
-    min-height: 180px;
-    min-width: 32%;
-    margin: 0.5rem;
-    float: left;
-    width: auto;
-}*/
-
-
-
-.secciones {
-    /*border: 2px solid green; */
-    min-height: 50px;
-    margin: 0.5rem;
-
-}
-
-.secciones article {
-    /*border: 2px solid purple;*/
-    margin: 0.5rem;
-    min-height: 20px;
+    border: 1px solid rebeccapurple;
+   
 }
 
 
+img{
+    width: 15rem;
+    
+}
 
 /*logo y menu*/
 .header-logo {
@@ -124,9 +112,12 @@ main>div {
 .header-menualquiler a:hover {
     color: rgb(151, 12, 98);
 }
+
 .header-menualquiler li a {
-    font-size: 1.2rem;
-    background: transparent;
+    font-size: 48px;
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    background: rgb(238, 163, 209);
     border: black
 }
 
@@ -138,7 +129,64 @@ main>div {
     background-color:antiquewhite;
     margin-top: 4px;
     margin-block: 2px;
-    margin-left: 0%;
+    margin-left: 0%;   
+}
+/*se agrega animacion a las fotos*/
+
+#imagen1:hover{
+    transform: translate(10px);
     
+}
+#imagen2:hover{
+    transform: translate(10px);
+}
+#imagen3:hover{
+    transform:translate(10px);
+}
+#imagen4:hover{
+    transform:translate(10px);
+}
+#imagen5:hover{
+    transform:translate(10px);
+}
+#imagen6:hover{
+    transform:translate(10px);
+}
+div p{
+    color: rgb(10, 9, 10);
+    background-color: rgb(247, 177, 237);
+    text-align: justify;
+
+}
+h3{
+   color:rgb(1, 1, 10);
+    text-shadow: 2px 2px 5px rgb(100, 98, 98);
+    text-align: center;
+    border: solid black;
+}
+#contenedor{
+    border: solid 2px rgb(14, 12, 12);
+    padding: .5rem;
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    height: auto;
+    justify-content:space-between;
+    gap:2rem;
+
+
+}
+.items{
+    background-color:rgb(189, 163, 212);
+    padding: .5rem;
+    margin: .5rem;
+    text-align: center;
     
+}
+
+@media screen and (max-width:600px){
+ #contenedor {
+    flex-direction:column;
+    align-items:center;
+ }
 }
