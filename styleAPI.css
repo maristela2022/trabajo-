@@ -12,10 +12,6 @@ html {
 
 }
 
-.logo {
-    height: 16rem;
- 
-}
 h1 {
     font-family:'Tangerine', serif;
     color:rgb(11, 11, 12);
@@ -28,7 +24,7 @@ h1 {
 
 h2{
    font-family:'Tangerine', serif;
-   font-size: 48px;
+   font-size: 68px;
    text-shadow: 4px 4px 4px #aaa; 
 }
 
@@ -107,10 +103,6 @@ header {
 footer {
     background: rgb(255,255,255);
 }
-img{
-    width: 15rem;
-    
-}
 
 /*logo y menu*/
 .header-logo {
@@ -128,3 +120,42 @@ img{
 
 p{text-align: center;
 text-align: justify;}
+
+h3{
+     font-family:'Tangerine', serif;
+   font-size: 50px;
+   text-shadow: 4px 4px 4px #aaa; 
+   padding-top: 20%;
+   padding-right: 10px;
+   text-align: justify;
+
+}
+.empleados{
+    width: 50%;
+    margin: 10%;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid black
+
+}
+
+#Nombres{
+    font-family:'Tangerine', serif;
+    font-size: 35px;
+    text-align: justify;
+    
+}
+
+#apellido{
+    font-family:'Tangerine', serif;
+    font-size: 35px;
+    text-align: justify;
+}
+
+@media screen and (max-width:600px){
+ #contenedor {
+    flex-direction:column;
+    align-items:center;
+ }
+}

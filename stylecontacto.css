@@ -9,7 +9,6 @@
 html {
     font-size: 1rem;
     height: 100%;
-
 }
 
 .logo {
@@ -17,29 +16,16 @@ html {
  
 }
 h1 {
-    font-family:'Tangerine', serif;
+    font-family: 'Tangerine', serif;
     color:rgb(11, 11, 12);
     text-align: left;
     font-size: 48px;
-    text-shadow: 4px 4px 4px #aaa; 
+    text-shadow: 4px 4px 4px #aaa;
     background-color: rgb(231, 204, 231);
 
 }
 
-h2{
-   font-family:'Tangerine', serif;
-   font-size: 48px;
-   text-shadow: 4px 4px 4px #aaa; 
-}
 
-body, header, main, footer {
-    /*border: 3px solid red;*/
-    min-height: 50px;
-    min-width: 400px;
-    margin: .5rem;
-  
-  
-}
 
 body {
     background-color: rgb(245, 204, 245);
@@ -48,7 +34,7 @@ body {
 main {
     min-height: 200px;
     overflow: auto;                 /*evita que el main=bloque grande se desborde*/
-    background-color: white;
+    background-color: rgb(245, 204, 245);
     
 }
 
@@ -56,6 +42,24 @@ header {
     background: #fff;
     box-shadow: 0 0 0.5rem rgba(179, 174, 172, 0.5);
 }
+footer {
+    background: rgb(255,255,255);
+}
+
+/*contenido principal*/
+main>div {
+    /*border: 2px solid blue;*/
+    min-height: 100px;
+    margin: 8rem;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(126, 36, 111);
+   
+}
+
 .header-menualquiler {
     left: auto;
     position: relative;
@@ -94,6 +98,7 @@ header {
     background: rgb(238, 163, 209);
     border: black
 }
+
 #barra_navegacion {
    
    display:flex;
@@ -104,27 +109,50 @@ header {
     margin-block: 2px;
     margin-left: 0%;   
 }
-footer {
-    background: rgb(255,255,255);
+
+div p{
+    color: rgb(10, 9, 10);
+    background-color: rgb(247, 177, 237);
+    text-align: justify;
+
 }
-img{
-    width: 15rem;
+
+
+.contacto{
+    max-width: 700px;
+    margin:20px auto;
+    position:relative;
+  
+}
+.contacto .title{
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 48px;
+    padding-top: 10px;
+}
+
+
+.submit-btn{
     
+    background-color: rgb(226, 90, 197) ;
+    color:#000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 40px;
+    padding:8 px 26px;
+    border: none;
+    border-radius: 10%;
+    width: 100px;
+    cursor:pointer;
+    align-self: center;
 }
 
-/*logo y menu*/
-.header-logo {
-    width: auto;
-    display: inline-block;
-    margin: 0.5rem;}
 
-#contenedor{
-    border: solid 2px rgb(14, 12, 12);
-    display: flex;
-    flex-wrap:wrap ;
-    height: auto;
-    padding-bottom: 10rem;
-    gap:2rem;}
-
-p{text-align: center;
-text-align: justify;}
+@media screen and (max-width:600px){
+ #contenedor {
+    flex-direction:column;
+    align-items:center;
+ }
+}

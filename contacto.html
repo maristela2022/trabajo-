@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Stack Python TPO</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="stylecontacto.css">
+    <script src="https://kit.fontawesome.com/6e26ddb575.js" crossorigin="anonymous"></script>
 </head>
-
-
 <body>
     <header>
         <div>
@@ -19,82 +18,62 @@
     AlquiTemp!
     </h1>
     </div>
-<main>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
-     
-<section id="contenedor">
-    <h2>Contacto</h2>
-
-
-<section class="box-content">
-    <div class="container">
-        <p class="p1"><span class="s1">Completando el siguiente formulario le informaremos disponibilidad y tarifas. </span></p>
-        <p class="p1"></p><div role="form" class="wpcf7" id="wpcf7-f4-p44-o1" lang="es-ES" dir="ltr">
-    <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-    <form action="/reservas/#wpcf7-f4-p44-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-    <div style="display: none;">
-        <input type="hidden" name="_wpcf7" value="4">
-        <input type="hidden" name="_wpcf7_version" value="5.5.3">
-        <input type="hidden" name="_wpcf7_locale" value="es_ES">
-        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p44-o1">
-        <input type="hidden" name="_wpcf7_container_post" value="44">
-        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-        </div>
-    <div class="box-inline">
-    <label> Nombre (*)</label><br>
-    <span class="wpcf7-form-control-wrap nombre"><input type="text" name="nombre" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span>
-    </div>
-    <div class="box-inline">
-    <label> Apellido (*)</label><br>
-    <span class="wpcf7-form-control-wrap apellido"><input type="text" name="apellido" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span>
-    </div>
-    <div class="box-inline">
-    <label> Fecha de Ingreso (*)</label><br>
-    <span class="wpcf7-form-control-wrap ingreso"><input type="date" name="ingreso" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date" aria-invalid="false"></span>
-    </div>
-    <div class="box-inline">
-    <label> Fecha de Egreso (*)</label><br>
-    <span class="wpcf7-form-control-wrap egreso"><input type="date" name="egreso" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date" aria-invalid="false"></span>
-    </div>
-    <div class="box-inline">
-    <label> Cantidad de Pasajeros (*)</label><br>
-    <span class="wpcf7-form-control-wrap pasajeros"><input type="text" name="pasajeros" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span>
-    </div>
-    <div class="box-inline">
-    <label> Telefono</label><br>
-    <span class="wpcf7-form-control-wrap telefono"><input type="text" name="telefono" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span>
-    </div>
-    <div class="box-inline">
-    <label> Email</label><br>
-    <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span>
-    </div>
-    <div class="box-inline">
-    <label> Ciudad</label><br>
-    <span class="wpcf7-form-control-wrap ciudad"><input type="text" name="ciudad" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span>
-    </div>
-    <div class="box-no-inline">
-    <label>Mensaje</label><br>
-    <span class="wpcf7-form-control-wrap mensaje"><textarea name="mensaje" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
-    </div>
-        <p><input type="submit" value="Send" class="wpcf7-form-control has-spinner wpcf7-submit btn"><span class="wpcf7-spinner"></span></p>
-    <div class="wpcf7-response-output" aria-hidden="true"></div></form></div><p></p>
-
-    </div>
-</section>
     
+        <nav class="header-menualquiler" id="barra_navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quienes somos</a></li>
+                <li><a href="condiciones.html">Condiciones</a></li>
+                <li><a href="ubicacion.html">Donde estamos ubicados</a></li>
+                <li><a href="publica.html">Publica tu propiedad</a></li>
+                                                  
+            </ul>
+        </nav>
+    </header>
+    <main>
+<div class="container">      
+<section class="contacto">
+    
+    <h1 class="title">Dejanos tus datos!</h1>
+   
+    <i class="fa-regular fa-envelope fa-3x" style="color:blueviolet"></i>
+    <form name="fvalida" >
+        
+         
+        <table>
+            <tr>
+                <td>Nombre y apellido: </td>
+                <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" name="email" size="30" maxlength="100"></td>
+            </tr>
+            <tr>
+                <td>Telefono: </td>
+                <td><input type="text" name="telefono" size="30" maxlength="25"></td>
+            </tr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="40" align="center"><input type="button" class="submit-btn" value="Enviar" onclick="valida_envia()"></td>
+            </tr>
+        </table>
+    </form>
 </section>
-</div>
-</main>
- <footer>
-<a href="index.html">Ir a inicio</a>
-    </footer>
+
+</div>   
 
     
+  
+
 
 </body>
-
-<script src="script.js"></script>
-
+<script src="contacto.js"></script>
+<footer>
+    <a href="index.html">Ir a inicio</a>
+</footer>
 
 </html>
